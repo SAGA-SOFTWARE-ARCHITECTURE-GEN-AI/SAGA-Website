@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAGA — Software Architecture &amp; Generative AI Research</title>
+  <meta name="description" content="SAGA is a cross-institutional research collaboration between SDU, GSSI, and UNINA exploring the intersection of software architecture and artificial intelligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="SAGA home">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="36" height="36" rx="8" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M11 28 L11 20 Q19 11 27 20 L27 28" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <line x1="9" y1="28" x2="29" y2="28" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="19" cy="11" r="2.5" fill="var(--accent)"/>
+        <circle cx="11" cy="28" r="1.5" fill="currentColor"/>
+        <circle cx="27" cy="28" r="1.5" fill="currentColor"/>
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-name">SAGA</span>
+        <span class="logo-tagline">Research Collaboration</span>
+      </div>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-hidden="true" aria-label="Mobile navigation">
+    <a href="index.html"        onclick="closeMobileNav()">About</a>
+    <a href="team.html"         onclick="closeMobileNav()">Team</a>
+    <a href="publications.html" onclick="closeMobileNav()">Publications</a>
+    <a href="contact.html"      onclick="closeMobileNav()">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Software Architecture &amp; Generative AI
+      </div>
+      <h1 class="hero-title">
+        Where Architecture<br><em>Meets Intelligence</em>
+      </h1>
+      <p class="hero-desc">
+        A cross-institutional research collaboration advancing the science of AI-enhanced software architecture, from automated recovery to security-aware design.
+      </p>
+      <div class="hero-institutions" aria-label="Partner institutions">
+        <span class="inst-badge sdu">SDU</span>
+        <span class="inst-divider" aria-hidden="true">·</span>
+        <span class="inst-badge gssi">GSSI</span>
+        <span class="inst-divider" aria-hidden="true">·</span>
+        <span class="inst-badge unina">UNINA</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#research" class="btn btn-primary">Explore Research</a>
+        <a href="team.html"  class="btn btn-outline">Meet the Team</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid fade-in-stagger">
+        <div class="stat-item">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Partner Institutions</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="7">0</div>
+          <div class="stat-label">Researchers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label">Publications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESEARCH THEMES -->
+  <section id="research" class="section section-research">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Research</span>
+        <h2>What We Investigate</h2>
+        <p class="section-desc">Our collaboration spans the full spectrum of software intelligence,from making existing systems legible to AI, to building new systems that embed AI safely and dependably.</p>
+      </div>
+      <div class="themes-grid fade-in-stagger">
+
+        <article class="theme-card">
+          <div class="theme-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Architecture Intelligence</h3>
+          <p>Using large language models to automatically recover, reconstruct, and document software architectures from source code, enabling systems to understand themselves.</p>
+        </article>
+
+        <article class="theme-card">
+          <div class="theme-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h10M7 12h6"/></svg>
+          </div>
+          <h3>LLM-Integrated Systems</h3>
+          <p>Architectural principles, patterns, and design tactics for building software systems that reliably and securely incorporate language model components at scale.</p>
+        </article>
+
+        <article class="theme-card">
+          <div class="theme-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Quality &amp; Security Engineering</h3>
+          <p>Detecting anti-patterns, mitigating adversarial threats such as prompt injection, and verifying the correctness and dependability of AI-powered software systems.</p>
+        </article>
+
+        <article class="theme-card">
+          <div class="theme-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+          </div>
+          <h3>Edge &amp; Constrained Deployment</h3>
+          <p>Optimizing small language models for resource-constrained environments where latency and power are critical constraints.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTITUTIONS -->
+  <section class="section section-institutions">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Partners</span>
+        <h2>Our Institutions</h2>
+        <p class="section-desc">Three leading European universities, united by a shared commitment to advancing the frontier of intelligent software engineering.</p>
+      </div>
+      <div class="inst-grid fade-in-stagger">
+
+        <div class="inst-card">
+          <div class="inst-card-flag">
+            <span class="inst-abbr sdu">SDU</span>
+            <span class="inst-country">🇩🇰 Denmark</span>
+          </div>
+          <h3>University of Southern Denmark</h3>
+          <p>The DECO Lab at SDU's Department of Mathematics and Computer Science contributes expertise in TinyML, distributed edge computing, sustainable AI, and efficient ML systems for resource-constrained environments.</p>
+          <a href="https://www.sdu.dk" target="_blank" rel="noopener noreferrer" class="inst-link">
+            sdu.dk
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="inst-card">
+          <div class="inst-card-flag">
+            <span class="inst-abbr gssi">GSSI</span>
+            <span class="inst-country">🇮🇹 Italy</span>
+          </div>
+          <h3>Gran Sasso Science Institute</h3>
+          <p>Based in L'Aquila, GSSI's Computer Science group brings world-class expertise in software architecture, model-driven engineering, autonomous systems, and cyber-physical system design.</p>
+          <a href="https://www.gssi.it" target="_blank" rel="noopener noreferrer" class="inst-link">
+            gssi.it
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="inst-card">
+          <div class="inst-card-flag">
+            <span class="inst-abbr unina">UNINA</span>
+            <span class="inst-country">🇮🇹 Italy</span>
+          </div>
+          <h3>University of Naples Federico II</h3>
+          <p>One of Europe's oldest universities, UNINA's Software Engineering group excels in software quality, automated testing, architecture recovery, and verification of complex systems.</p>
+          <a href="https://www.unina.it" target="_blank" rel="noopener noreferrer" class="inst-link">
+            unina.it
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-name"><em>Research Collaboration</em>SAGA</div>
+    <div class="footer-insts">
+      <a href="https://www.sdu.dk"   target="_blank" rel="noopener noreferrer" class="footer-inst sdu">SDU</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.gssi.it"  target="_blank" rel="noopener noreferrer" class="footer-inst gssi">GSSI</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.unina.it" target="_blank" rel="noopener noreferrer" class="footer-inst unina">UNINA</a>
+    </div>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> SAGA Research Collaboration · SDU, GSSI &amp; UNINA</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

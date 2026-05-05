@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team — SAGA Research Collaboration</title>
+  <meta name="description" content="Meet the researchers behind SAGA — a cross-institutional team from SDU, GSSI, and UNINA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="team">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="SAGA home">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="36" height="36" rx="8" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M11 28 L11 20 Q19 11 27 20 L27 28" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <line x1="9" y1="28" x2="29" y2="28" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="19" cy="11" r="2.5" fill="var(--accent)"/>
+        <circle cx="11" cy="28" r="1.5" fill="currentColor"/>
+        <circle cx="27" cy="28" r="1.5" fill="currentColor"/>
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-name">SAGA</span>
+        <span class="logo-tagline">Research Collaboration</span>
+      </div>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <a href="index.html" onclick="closeMobileNav()">About</a>
+    <a href="team.html" onclick="closeMobileNav()">Team</a>
+    <a href="publications.html" onclick="closeMobileNav()">Publications</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="section-label">People</span>
+      <h1>Meet the <em>Team</em></h1>
+      <p class="desc">Seven researchers across three universities, combining expertise in software architecture, machine learning, automated testing, and AI-integrated systems.</p>
+    </div>
+  </section>
+
+  <section class="section section-team">
+    <div class="container">
+
+      <!-- SDU -->
+      <div class="team-group fade-in">
+        <div class="team-group-header">
+          <span class="team-group-abbr sdu">SDU</span>
+          <span class="team-group-name">University of Southern Denmark · Odense, Denmark</span>
+        </div>
+        <div class="team-grid">
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/mahyar.jpg" alt=""/>
+            <div class="team-info">
+              <div class="team-name">Mahyar Tourchi Moghaddam</div>
+              <div class="team-role">Associate Professor · Lab Director</div>
+              <div class="team-affiliation">SDU · DECO Lab</div>
+            </div>
+            <p class="team-bio">Research interests include distributed edge and cloud computing, TinyML, sustainable AI, and data-aware ML pipelines for resource-constrained environments.</p>
+            <div class="team-links">
+              <a href="mailto:mtmo@mmmi.sdu.dk" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?user=be0lMAoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/daghero.jpg"/>
+            <div class="team-info">
+              <div class="team-name">Francesco Daghero</div>
+              <div class="team-role">Postdoctoral Researcher</div>
+              <div class="team-affiliation">SDU · DECO Lab</div>
+            </div>
+            <p class="team-bio">Specialises in TinyML, neural network compression, extreme quantisation, and efficient deployment of language models on resource-constrained edge devices and robotic platforms.</p>
+            <div class="team-links">
+              <a href="mailto:fdag@mmmi.sdu.dk" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?user=OiJ-ew0AAAAJ&hl=da&oi=ao" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/tiziano.jpeg"/>
+            <div class="team-info">
+              <div class="team-name">Tiziano Santilli</div>
+              <div class="team-role">Postdoctoral Researcher</div>
+              <div class="team-affiliation">SDU · DECO Lab</div>
+            </div>
+            <p class="team-bio">Works on software architecture, continuous compliance, security of AI-integrated systems, adversarial robustness, including safeguard techniques against prompt injection and jailbreak attacks, and AI Act.</p>
+            <div class="team-links">
+              <a href="mailto:tisa@mmmi.sdu.dk" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?hl=da&user=D_-SJPYAAAAJ" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- GSSI -->
+      <div class="team-group fade-in">
+        <div class="team-group-header">
+          <span class="team-group-abbr gssi">GSSI</span>
+          <span class="team-group-name">Gran Sasso Science Institute · L'Aquila, Italy</span>
+        </div>
+        <div class="team-grid">
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/pelliccione.jpg"/>
+            <div class="team-info">
+              <div class="team-name">Patrizio Pelliccione</div>
+              <div class="team-role">Full Professor</div>
+              <div class="team-affiliation">GSSI · Computer Science</div>
+            </div>
+            <p class="team-bio">Leading researcher in software architecture for autonomous and cyber-physical systems, model-driven engineering, self-adaptive systems, and quality-driven architectural design for safety-critical contexts.</p>
+            <div class="team-links">
+              <a href="mailto:patrizio.pelliccione@gssi.it" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://www.patriziopelliccione.com" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- UNINA -->
+      <div class="team-group fade-in">
+        <div class="team-group-header">
+          <span class="team-group-abbr unina">UNINA</span>
+          <span class="team-group-name">University of Naples Federico II · Naples, Italy</span>
+        </div>
+        <div class="team-grid">
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/domenico.png"/>
+            <div class="team-info">
+              <div class="team-name">Domenico Amalfitano</div>
+              <div class="team-role">Associate Professor</div>
+              <div class="team-affiliation">UNINA · Software Engineering</div>
+            </div>
+            <p class="team-bio">Expert in automated software testing, mobile application testing, and the application of LLMs to architecture recovery from industrial codebases.</p>
+            <div class="team-links">
+              <a href="mailto:domenico.amalfitano@unina.it" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?hl=da&user=ReafO6YAAAAJ" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/marco.jpeg"/>
+            <div class="team-info">
+              <div class="team-name">Marco De Luca</div>
+              <div class="team-role">PhD Researcher</div>
+              <div class="team-affiliation">UNINA · Software Engineering</div>
+            </div>
+            <p class="team-bio">Focuses on automated software architecture recovery, Architecture-as-Code generation, and the use of LLMs to extract structural knowledge and design patterns from source code at scale.</p>
+            <div class="team-links">
+              <a href="mailto:marco.deluca2@unina.it" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?hl=da&user=UpbVKHIAAAAJ" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-avatar" src="./imgs/fasolino.jpg"/>
+            <div class="team-info">
+              <div class="team-name">Anna Rita Fasolino</div>
+              <div class="team-role">Full Professor</div>
+              <div class="team-affiliation">UNINA · Software Engineering</div>
+            </div>
+            <p class="team-bio">Internationally recognised authority on software quality engineering, verification and validation, testing automation, and quality assessment of AI-integrated software systems.</p>
+            <div class="team-links">
+              <a href="mailto:fasolino@unina.it" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?hl=da&user=lC5j76YAAAAJ" target="_blank" rel="noopener noreferrer" class="team-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Profile
+              </a>
+            </div>
+          </article>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-name"><em>Research Collaboration</em>SAGA</div>
+    <div class="footer-insts">
+      <a href="https://www.sdu.dk"   target="_blank" rel="noopener noreferrer" class="footer-inst sdu">SDU</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.gssi.it"  target="_blank" rel="noopener noreferrer" class="footer-inst gssi">GSSI</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.unina.it" target="_blank" rel="noopener noreferrer" class="footer-inst unina">UNINA</a>
+    </div>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> SAGA Research Collaboration · SDU, GSSI &amp; UNINA</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
